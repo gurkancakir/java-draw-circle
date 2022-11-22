@@ -9,13 +9,13 @@ import java.awt.*;
 public class Test extends JFrame {
     public static final int CANVAS_WIDTH  = 500;
     public static final int CANVAS_HEIGHT = 500;
-    private CirclePanel canvas;
+    private CirclePanel panel;
 
     public Test() {
-        canvas = new CirclePanel(new CircleImpl());
-        canvas.setPreferredSize(new Dimension(CANVAS_WIDTH, CANVAS_HEIGHT));
+        panel = new CirclePanel(new CircleImpl());
+        panel.setPreferredSize(new Dimension(CANVAS_WIDTH, CANVAS_HEIGHT));
         Container cp = getContentPane();
-        cp.add(canvas);
+        cp.add(panel);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         pack();
         setTitle("Challenge #16");

@@ -6,7 +6,7 @@ public class CircleImpl implements Circle {
 
     @Override
     public void drawCircle(Graphics g, int xLeft, int yTop, int diameter) {
-        g.drawRect(xLeft, yTop, diameter + 1, diameter + 1);
+        //g.drawRect(xLeft, yTop, diameter + 1, diameter + 1);
 
         Point center = new Point(xLeft + diameter / 2, yTop  + diameter / 2);
         Point previous = null;
